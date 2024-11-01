@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+        .img{
+            width: 343px;
+            height: 70%;
+            border-radius: 4%;
+            border-color: blue;
+            border-bottom: 10px;
+            align-content: end;
+           
+        }
+        .img1{
+            width: 343px;
+            height: 70%;
+            border-radius: 4%;
+        }
+    </style>
+        <style>
+        .hamburger{
+            display: inline-block;
+            cursor: pointer;
+            padding: 15px;
+        }
+        .hamburger div{
+            width: 30px;
+            height: 3px;
+            background-color: #333;
+            margin: 5px;
+        }
+        .menu-content{
+            display: none;
+            background-color: #f9f9f9;
+            padding: 10px;
+            position: absolute;
+            top: 50px;
+            width: 150px;
+            border-radius: 5px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        }
+        .menu-content a{
+            color:black;
+            padding: 8px 12px;
+            text-decoration: none;
+            display: block;
+            border-radius: 5px;
+        }
+        .menu-content a:hover{
+            background-color: #ddd;
+            
+        }
+        .thumbnail-one{
+            display: inline-block;
+            
+        }
+        .thumbnail-two{
+            display: inline-block;
+        }
+        .yt-thumbnail{
+            display: inline-block;
+        }
+    </style>
+    </head>
+    <body>
+
+        <div class="hamburger" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="yt-thumbnail">
+            <img class="yt" src="yt .webp" alt ; width=" 160px" ; height="65px">
+        </div>
+        <div id="menu" class="menu-content">
+            <a href="#">Home</a>
+            <a href="#">Shorts</a>
+            <a href="#">Subscriptions</a>
+        </div>
+        <script>
+    function toggleMenu(){
+        var menu = document.getElementById("menu");
+        if(menu.style.display ==="block"){
+            menu.sytle.display = "none";
+        } else {
+            menu.style.display = "block";
+        }
+    }
+  </script>
+        <div class="thumbnail-one">
+            <img class="img" src="hq720.webp" alt>
+        </div>
+        <!-- <div style="display: flex; justify-content:right; align-items:right"> -->
+        <div class="thumbnail-two">
+            <img class="img1" src="img.webp" alt>
+        </div>
+    </body>
+</html>
